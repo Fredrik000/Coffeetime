@@ -1,0 +1,23 @@
+.see-shoppingcart-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: $contrast-color;
+  justify-content: space-around;
+  height: 8vh;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+
+  .see-shoppingcart-btn {
+    margin-left: 15px;
+    border: 1px solid black;
+    height: 60%;
+    width: 50%;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+  }
+}

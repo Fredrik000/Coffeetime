@@ -1,0 +1,91 @@
+// Header bar for options and total
+.options {
+  display: inline-block;
+  background-color: $contrast-color;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+
+  h3 {
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+}
+
+// Size options styling
+.choose-size {
+  margin: 5px;
+  height: 20vh;
+  margin-bottom: 25px;
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    align-items: center;
+    padding: 5px;
+    box-shadow: inset 0 -4px 2px -2px $opacity-contrast-color;
+  }
+
+  img {
+    height: 50px;
+    width: auto;
+  }
+
+  .item-price {
+    justify-self: center;
+  }
+}
+
+// Extra options styling
+.choose-extra {
+  margin: 5px;
+  height: 20vh;
+
+  li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding: 5px;
+    box-shadow: inset 0 -4px 2px -2px $opacity-contrast-color;
+  }
+
+  .extra-name {
+    grid-column: 1;
+  }
+
+  .extra-price {
+    justify-self: center;
+    grid-column: 3;
+  }
+}
+
+// Checkbox styling
+.checkbox-wrapper {
+  grid-column: 4;
+  cursor: pointer;
+  justify-self: end;
+  margin-right: 25px;
+
+  input {
+    &:checked ~ .checkmark {
+      background-color: $contrast-color;
+    }
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid $contrast-color;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.2s;
+  }
+}
